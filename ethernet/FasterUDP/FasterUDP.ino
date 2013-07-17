@@ -3,8 +3,6 @@
 #include "utility/w5100.h"
 #include "utility/socket.h"
 #include "Ethernet.h"
-#include "Udp.h"
-#include "Dns.h"
 
 uint16_t i = 1234;
 long packetCount = 0;
@@ -25,6 +23,12 @@ void setup()
  udp.begin(59000);
  Serial.println(Ethernet.localIP());
  Serial.println(UDP_TX_PACKET_MAX_SIZE);
+ 
+ //Serial.print("Divider is: ");
+ //Serial.println(SPI.getClockDivider());
+ SPI.setClockDivider(0x04);
+ //Serial.print("Now it's: ");
+ //Serial.print(SPI.getClockDivider());
  //Serial.println(millis());
  
  uint8_t lo = i & 0xFF;
@@ -42,7 +46,7 @@ void setup()
 void loop()
 {
   
- while(true){
+ while(millis() < 60000){
    udp.beginPacket(comp_ip, 59000);
    //Serial.println("Begin packet!");
    

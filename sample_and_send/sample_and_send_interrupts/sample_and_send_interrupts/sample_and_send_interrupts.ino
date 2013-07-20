@@ -11,15 +11,14 @@
 #include "utility/socket.h"
 #include "Ethernet.h"
 
-#define capacity 200
+#define capacity 1400
 
 byte ard_mac[] = {0x90, 0xA2, 0xDA, 0x0E, 0x98, 0x19};
 byte ard_ip[] = {192, 168, 7, 2};
 byte comp_ip[] = {192, 168, 7, 1};
 
-//uint16_t capacity = 200;
 uint8_t many[capacity];
-volatile uint8_t written = 0;
+volatile uint16_t written = 0;
 uint16_t packetCount = 0;
 
 EthernetUDP udp; 

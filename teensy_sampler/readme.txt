@@ -1,13 +1,20 @@
+teensy-adc
+=========
+*** Currently Linux only... 
+
+This is code for an ADC sampler for teensyduino (pjrc.com/teensy/teensyduino.html). The sampling rate is approximately 71kHz. 
+
+Data is sent over the serial port and must be collected and parsed on the other end. 
+
+
 Using teensy-adc
 ===============
-
-*** This is currently for Linux only... 
 
 1. Set up your environment. 
 - Get Arduino libraries and IDE from arduino.cc. 
 - Get Teensy code and drivers from pjrc.com/teensy/td_download.html
 
-2. Upload the code to your teensy. 
+2. Upload the code to your teensy. You can do this from within the Arduino IDE. 
 
 3. Plug in your teensy. Use dmesg to see where it is in the filesystem. For my system it was /dev/ttyACM0. 
 

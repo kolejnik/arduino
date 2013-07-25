@@ -14,7 +14,7 @@ socket.puts("Hello Arduino!");
 
 time = Time.now();
 
-f = File.open("arduino_#{time.hour}-#{time.min}-#{time.sec}.txt", "w");
+#f = File.open("arduino_#{time.hour}-#{time.min}-#{time.sec}.txt", "w");
 
 while (Time.now() - time < 60)
 
@@ -31,7 +31,7 @@ while (Time.now() - time < 60)
 	end
 
 i+=(mesg.length/2);
-f.write(mesg);
+#f.write(mesg);
 =begin
 j = 1;
 
@@ -39,17 +39,16 @@ j = 1;
 	
 	val2 = mesg[j-1].ord | (mesg[j].ord << 8);
 	
-	puts "Packet#: #{packets}  #{val2}"
-	i+=1;
+	#puts "Packet#: #{packets}  #{val2}"
 	j+=2;
-	#puts i
+	#puts val2
 
 	end
 
 =end
 end
 
-f.close();
+#f.close();
 puts "Packets: #{packets}"
 puts "Values: #{i}"
 puts "Sampling rate: #{(i/60.0)}";

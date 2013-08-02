@@ -1,4 +1,6 @@
-    #simplest ruby program to read from arduino serial,
+#From Arduino website: http://playground.arduino.cc/Interfacing/Ruby
+#
+#simplest ruby program to read from arduino serial,
     #using the SerialPort gem
     #(http://rubygems.org/gems/serialport)
      

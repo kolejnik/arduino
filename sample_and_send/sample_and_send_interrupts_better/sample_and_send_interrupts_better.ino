@@ -18,7 +18,7 @@ byte ard_mac[] = {0x90, 0xA2, 0xDA, 0x0E, 0x98, 0x19}; //Arduino MAC address
 byte ard_ip[] = {192, 168, 7, 2}; //Arduino IP
 byte comp_ip[] = {192, 168, 7, 1}; //Computer IP
 
-uint8_t adc_valsadc_vals[capacity]; //Store ADC values in here
+uint8_t adc_vals[capacity]; //Store ADC values in here
 volatile uint16_t written = 0; //Values written to 
 uint16_t packetCount = 0; //Packets sent
 

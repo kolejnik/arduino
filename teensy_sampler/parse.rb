@@ -1,8 +1,9 @@
 #!/usr/bin/ruby
 
 #ARGV[0] = File to parse
+#ARGV[1] = Output file
 
-parsed = File.new("parsed.txt", "w"); #Parsed output file
+parsed = File.new(ARGV[1], "w"); #Parsed output file
 f = File.open(ARGV[0], "r"); 
 
 bytesRead = 0;

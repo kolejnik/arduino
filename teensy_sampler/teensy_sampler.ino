@@ -48,8 +48,7 @@ sbi(ADCSRA, ADSC); //Initial conversion is slow
 }
 
 void loop(){
-  while(millis() < 60000){
-     
+ 
      while (!(bit_is_set(ADCSRA, ADIF))){
     //Serial.println("Waiting!");
   }
@@ -72,7 +71,7 @@ void loop(){
 
    //Reset ADIF for next conversion by setting it to 1.
    sbi(ADCSRA, ADIF);
-  }
+
   
   //Uncomment for debugging purposes. Sampling rate
   //Serial.println(packetCount * (capacity/2)/60.0);

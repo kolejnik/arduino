@@ -4,10 +4,14 @@ Links to relevant documentation
 Arduino Ethernet Shield
 http://arduino.cc/en/Main/ArduinoEthernetShield
 
-Wiz5100 chip
+Wiz5100 chip (Ethernet shield)
 https://www.sparkfun.com/datasheets/DevTools/Arduino/W5100_Datasheet_v1_1_6.pdf
 
-ATmega328p
+ATmega328p (Arduino)
 http://www.atmel.com/Images/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48PA-88A-88PA-168A-168PA-328-328P_datasheet.pdf
 
+Teensy++ 2.0
+http://www.pjrc.com/teensy/teensyduino.html
 
+Atmel 90USB1286 (Teensy)
+http://www.atmel.com/Images/7593s.pdf

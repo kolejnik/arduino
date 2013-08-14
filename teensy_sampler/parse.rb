@@ -1,5 +1,8 @@
 #!/usr/bin/ruby
 
+
+#Use this if you've received some binary data from your teensy and now want to parse it. 
+
 #ARGV[0] = File to parse
 #ARGV[1] = Output file
 

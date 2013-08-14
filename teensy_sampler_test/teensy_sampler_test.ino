@@ -1,3 +1,6 @@
+/* Use this to test if everything is working correctly. ADC values will be printed to serial console. Running the ruby client on the host is optional: you can just use the Arduino IDE's serial monitor to see the values. 
+*/
+
 #ifndef cbi
 #define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))
 #endif

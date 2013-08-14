@@ -1,3 +1,4 @@
+#Optional, write ADC values to a file on host
 #From Arduino website: http://playground.arduino.cc/Interfacing/Ruby
 #
 #simplest ruby program to read from arduino serial,

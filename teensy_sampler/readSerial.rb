@@ -1,4 +1,4 @@
-#From Arduino website: http://playground.arduino.cc/Interfacing/Ruby
+#Slightly modified code from Arduino website: http://playground.arduino.cc/Interfacing/Ruby
 #
 #simplest ruby program to read from arduino serial,
     #using the SerialPort gem
@@ -33,7 +33,7 @@
 			result = stuff[0] | (stuff[1] << 8)
 			f.write(result);
 			f.write("\n");
-			#puts stuff;
+			#puts stuff; 
 			
 			#puts stuff.class #String
 			
